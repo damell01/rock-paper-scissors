@@ -4,8 +4,9 @@
     --secondary-dark: #393e46;
     --secondary-dark-hover: #4a4f57;
     --secondary-dark-active: #5b5f68;
-    --header: #111720;
+    --header :black;
     --primary-yellow: #fac650;
+
   }
   
   *,
@@ -23,13 +24,19 @@
   }
   
   body {
-    background-color: var(--primary-dark);
     color: var(--primary-light);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     /* footer support */
     margin-bottom: 100px;
-  }
+    background-image: linear-gradient(to bottom,black,blue);
+    
+   
+}
+
+
+
+
   
   button {
     border: none;
@@ -45,13 +52,16 @@
   .header {
     display: flex;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 20px 0px;
     background-color: var(--header);
+
+
   }
   
   .title {
+      
     font-size: 32px;
-    color: var(--primary-yellow);
+    color: blue;
     font-family: 'Press Start 2P', cursive;
   }
   
@@ -68,11 +78,13 @@
   
   .score-info {
     font-size: 32px;
+    color:rgb(255, 0, 0);
   }
   
   .score-message {
     font-size: 20px;
     margin-bottom: 15px;
+
   }
   
   .scores-container {
@@ -93,6 +105,7 @@
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: bold;
+    color: red;
   }
   
   .buttons {
@@ -103,8 +116,9 @@
   }
   
   .btn {
-    border-radius: 10px;
-    background-color: var(--secondary-dark);
+    background-color: transparent;
+background-repeat:no-repeat;
+    border: none;      
   }
   
   .btn-square {
@@ -113,7 +127,9 @@
   }
   
   .btn:hover {
-    background-color: var(--secondary-dark-hover);
+   
+        transform: scale(1.5) perspective(1px)
+    
   }
   
   .btn:active {
@@ -191,8 +207,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.6;
+    
+    opacity: 0.8;
   }
   
   .overlay.active {
@@ -208,6 +224,7 @@
   
     .score-info {
       font-size: 26px;
+      color:red;
     }
   
     .buttons {
@@ -217,6 +234,7 @@
     .btn-square {
       width: 100px;
       height: 100px;
+
     }
   
     .sign {
